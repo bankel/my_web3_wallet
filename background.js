@@ -1,7 +1,5 @@
 import { ethers } from "./node_modules/ethers/dist/ethers.min.js";
 
-console.log("Service Worker loaded successfully!");
-
 let accounts = ["0xYourEthereumAddress"]; // 这里改成你的测试地址
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.method === "eth_requestAccounts") {
